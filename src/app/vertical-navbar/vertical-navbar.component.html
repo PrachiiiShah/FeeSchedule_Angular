@@ -1,0 +1,15 @@
+<div class="sidebar" [ngClass]="{'expanded': isExpanded}" (mouseenter)="expandSidebar()" (mouseleave)="collapseSidebar()">
+    <div class="sidebar-toggle" (click)="toggleSidebar()">
+        <div *ngIf="isExpanded" class="back-icon">
+            <span class="ps-circle">PS</span>
+            <span class="prachi-shah">Prachi Shah</span>
+        </div>
+        <div *ngIf="!isExpanded" class="menu-icon">PS</div>
+    </div>
+    <div class="menu-items">
+        <div *ngFor="let menuItem of menuItems" class="menu-item">
+            <i [ngClass]="menuItem.icon"></i>
+            <span class="menu-name" *ngIf="isExpanded">{{ menuItem.name }}</span>
+        </div>
+    </div>
+</div>

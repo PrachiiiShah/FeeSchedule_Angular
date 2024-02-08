@@ -1,0 +1,24 @@
+    body {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    
+    .container {
+        display: flex;
+        position: absolute;
+    }
+    
+    .app-vertical-navbar {
+        width: 200px;
+        height: 100vh;
+        transition: width 0.3s;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
