@@ -75,3 +75,8 @@
     font-weight: bold;
     color: blue;
 }
+
+.sidebar.expanded .menu-name {
+    display: block;
+    /* Show menu names when sidebar is expanded */
+}

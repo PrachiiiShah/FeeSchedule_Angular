@@ -1,0 +1,47 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/* .container {
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    width: auto;
+}  */
+
+
+/* .app-vertical-navbar {
+    width: 200px;
+    height: 100vh;
+    transition: width 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+
+/* .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+} */
+
+img {
+    width: 100px;
+    height: 30px;
+}
+
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+    /* width: auto; */
+}
+
+
+/* .container {
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+} */

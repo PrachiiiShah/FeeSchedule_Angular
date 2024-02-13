@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router} from '@angular/router';
+import { RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-
+  // constructor(private router: Router) {}
+  // navigateToForeclosure() {
+  //   this.router.navigate(['/foreclosure']);
+  // }
 }
