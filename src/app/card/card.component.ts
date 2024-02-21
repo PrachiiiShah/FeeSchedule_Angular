@@ -8,8 +8,5 @@ import { RouterLink} from '@angular/router';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent {
-  // constructor(private router: Router) {}
-  // navigateToForeclosure() {
-  //   this.router.navigate(['/foreclosure']);
-  // }
+ 
 }

@@ -1,9 +1,3 @@
-.card {
-    width: 1500px;
-    height: 200px;
-    margin-left: 70px;
-}
-
 .feeSchedule {
     background-color: #e6eeff;
     width: 190px;
@@ -39,6 +33,7 @@ h1 {
 
 .fees {
     display: flex;
+    width: auto;
     /* justify-content: space-between; */
 }
 

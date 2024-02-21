@@ -23,13 +23,14 @@
                                                                         <div class="row d-flex">
                                                                             <div class="col-3 text-center d-flex justify-content-center">
                                                                                 <span style="color: black; background-color: #e6eeff; width: 300px; height: 37px; text-align: center; padding: 5px; border-radius: 5px;">
-                                                                      State
-                                                                  </span>
+                                                                    State
+                                                                </span>
                                                                             </div>
                                                                             <div class="col-9">
                                                                                 <form class="app-search d-md-block mx-auto ml-5 ng-untouched ng-pristine ng-valid">
                                                                                     <div class="position-relative">
-                                                                                        <input type="text" placeholder="       Search..." autocomplete="off" [(ngModel)]="searchTerm" id="search-options" class="form-control ng-untouched ng-pristine ng-valid" style="background-color: gainsboro" (keyup.enter)="filterStates()" />
+                                                                                        <input type="text" placeholder="    Search..." autocomplete="off" [(ngModel)]="searchTerm" id="search-options" class="form-control ng-untouched ng-pristine ng-valid" style="background-color: gainsboro" (keyup)="filterStates()" />
+
                                                                                         <span class="ri-search-line search-widget-icon"><i class="bi bi-search"></i></span>
                                                                                     </div>
                                                                                 </form>
@@ -40,21 +41,21 @@
                                                                             <div class="nav nav-pills progress-bar-tab custom-nav">
                                                                                 <div class="col-12 wizard-search-box">
                                                                                     <div class="row">
-                                                                                        <div class="col-3" *ngFor="let state of filteredStates">
+                                                                                        <div class="col-3" *ngFor="let state of filteredStates" routerLinkActive="active" routerLink="/conventional">
                                                                                             <input type="radio" checked="" class="btn-check ml-auto" />
                                                                                             <label for="invoice-outlined" placement="bottom" class="ms-auto w-100">
-                                                                                  <div class="card card-body card-animate pe-auto p-3 mb-0 me-1 mt-1 wizard-selection-cards cursor-pointer">
-                                                                                      <div class="d-flex mb-1 align-items-center">
-                                                                                          <div class="flex-shrink-0 avatar-sm">
-                                                                                              <span class="avatar-title bg-light display-3 rounded-circle fs-24"><i class="ri-checkbox-circle-fill"></i></span>
-                                                                                          </div>
-                                                                                          <div class="flex-grow-1 ms-2">
-                                                                                              <h5 class="card-title mb-1 fs-14 text-primary">{{ state.abbreviation }}</h5>
-                                                                                              <p class="mb-0 fs-12 text-soft-primary">{{ state.name }}</p>
-                                                                                          </div>
-                                                                                      </div>
-                                                                                  </div>
-                                                                              </label>
+                                                                                <div class="card card-body card-animate pe-auto p-3 mb-0 me-1 mt-1 wizard-selection-cards cursor-pointer">
+                                                                                    <div class="d-flex mb-1 align-items-center">
+                                                                                        <div class="flex-shrink-0 avatar-sm">
+                                                                                            <span class="avatar-title bg-light display-3 rounded-circle fs-24"><i class="ri-checkbox-circle-fill"></i></span>
+                                                                                        </div>
+                                                                                        <div class="flex-grow-1 ms-2">
+                                                                                            <h5 class="card-title mb-1 fs-14 text-primary">{{ state.abbreviation }}</h5>
+                                                                                            <p class="mb-0 fs-12 text-soft-primary">{{ state.name }}</p>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </label>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -69,9 +70,9 @@
                                                                                         <i _ngcontent-tyd-c56="" class="ri-bill-line align-middle me-1 fs-17"></i> Foreclosure Progress
                                                                                     </h5>
                                                                                     <i class="bi bi-arrow-clockwise" style="
-                                        position: fix;
-                                        margin-left: 200px;
-                                      "></i>
+                                      position: fix;
+                                      margin-left: 200px;
+                                    "></i>
                                                                                 </div>
                                                                             </div>
                                                                             <div _ngcontent-tyd-c56="" class="card ribbon-box border shadow-none mb-lg-0 right progress-cards" style="cursor: pointer">
@@ -80,90 +81,10 @@
                                                                                         <div>
                                                                                             <div></div>
                                                                                             <i class="bi bi-exclamation-circle-fill"></i
-                                        ><span
-                                          class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
-                                        >
-                                          State
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div
-                                  class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
-                                >
-                                  <div
-                                    class="card-body progress-ribbon-cards"
-                                  >
-                                    <div>
-                                      <div></div>
-                                      <i
-                                        class="bi bi-exclamation-circle-fill"
-                                      ></i
                                       ><span
                                         class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
                                       >
-                                        Foreclousre Type
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div
-                                  class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
-                                >
-                                  <div
-                                    class="card-body progress-ribbon-cards"
-                                  >
-                                    <div>
-                                      <div></div>
-                                      <i
-                                        class="bi bi-exclamation-circle-fill"
-                                      ></i
-                                      ><span
-                                        class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
-                                      >
-                                        Loan Type
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
-
-                                <div
-                                  class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
-                                >
-                                  <div
-                                    class="card-body progress-ribbon-cards"
-                                  >
-                                    <div>
-                                      <div></div>
-                                      <i
-                                        class="bi bi-exclamation-circle-fill"
-                                      ></i
-                                      ><span
-                                        class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
-                                      >
-                                        Investor Type
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div
-                                  class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
-                                >
-                                  <div
-                                    class="card-body progress-ribbon-cards"
-                                  >
-                                    <div>
-                                      <div></div>
-                                      <i
-                                        class="bi bi-exclamation-circle-fill"
-                                      ></i
-                                      ><span
-                                        class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
-                                      >
-                                        Client
+                                        State
                                       </span>
                                     </div>
                                   </div>
@@ -171,44 +92,124 @@
                               </div>
 
                               <div
-                                _ngcontent-tyd-c56=""
                                 class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
-                                style="cursor: default"
                               >
                                 <div
-                                  class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                                  class="card-body progress-ribbon-cards"
                                 >
-                                  <div
-                                    class="card-body progress-ribbon-cards"
-                                  >
-                                    <div>
-                                      <div></div>
-                                      <i
-                                        class="bi bi-exclamation-circle-fill"
-                                      ></i
-                                      ><span
-                                        class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
-                                      >
-                                        Milestone
-                                      </span>
-                                    </div>
+                                  <div>
+                                    <div></div>
+                                    <i
+                                      class="bi bi-exclamation-circle-fill"
+                                    ></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Foreclousre Type
+                                    </span>
                                   </div>
                                 </div>
                               </div>
-                            </div>                                        </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                              <div
+                                class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                              >
+                                <div
+                                  class="card-body progress-ribbon-cards"
+                                >
+                                  <div>
+                                    <div></div>
+                                    <i
+                                      class="bi bi-exclamation-circle-fill"
+                                    ></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Loan Type
+                                    </span>
+                                  </div>
                                 </div>
+                              </div>
+
+                              <div
+                                class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                              >
+                                <div
+                                  class="card-body progress-ribbon-cards"
+                                >
+                                  <div>
+                                    <div></div>
+                                    <i
+                                      class="bi bi-exclamation-circle-fill"
+                                    ></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Investor Type
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                              >
+                                <div
+                                  class="card-body progress-ribbon-cards"
+                                >
+                                  <div>
+                                    <div></div>
+                                    <i
+                                      class="bi bi-exclamation-circle-fill"
+                                    ></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Client
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+                            <div
+                              _ngcontent-tyd-c56=""
+                              class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                              style="cursor: default"
+                            >
+                              <div
+                                class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                              >
+                                <div
+                                  class="card-body progress-ribbon-cards"
+                                >
+                                  <div>
+                                    <div></div>
+                                    <i
+                                      class="bi bi-exclamation-circle-fill"
+                                    ></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Milestone
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>                                        </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </body>

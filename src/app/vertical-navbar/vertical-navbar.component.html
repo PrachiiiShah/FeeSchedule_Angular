@@ -23,7 +23,7 @@
         <div *ngIf="!isExpanded" class="menu-icon">PS</div>
     </div>
     <div class="menu-items">
-        <div *ngFor="let menuItem of menuItems" class="menu-item">
+        <div *ngFor="let menuItem of menuItems" class="menu-item" (click)="navigate(menuItem.name)">
             <i [ngClass]="menuItem.icon"></i>
             <span class="menu-name" *ngIf="isExpanded">{{ menuItem.name }}</span>
         </div>

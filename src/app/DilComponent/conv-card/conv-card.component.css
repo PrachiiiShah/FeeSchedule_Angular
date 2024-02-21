@@ -1,9 +1,3 @@
-.card {
-    width: 1500px;
-    height: 200px;
-    margin-left: 70px;
-}
-
 .feeSchedule {
     background-color: #e6eeff;
     width: 190px;
@@ -13,12 +7,6 @@
 h5 {
     text-align: center;
     color: #6699ff;
-}
-
-.fee:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -39,6 +27,7 @@ h1 {
 
 .fees {
     display: flex;
+    width: auto;
     /* justify-content: space-between; */
 }
 
@@ -56,7 +45,12 @@ h1 {
 
 .icon-container {
     position: relative;
-    /* display: inline-block; */
+}
+
+.fee:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .bi-check-circle-fill {

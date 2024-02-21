@@ -1,0 +1,205 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+
+
+<body>
+    <div class="container">
+        <app-vertical-navbar>
+        </app-vertical-navbar>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <img src="https://beta-feeschedule.outamationlabs.com/assets/images/a360inc-logo.png">
+
+                            </li>
+                            <li class="nav-item">
+                                <h4 style="color:#6699ff"> | DIL Fee Schedule</h4>
+
+
+                            </li>
+                            <li>
+                                <div class="toggle">
+                                    <button class="btn"><i class="bi bi-fullscreen" (click)="toggleFullScreen()"></i></button>
+
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+
+
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <br>
+
+
+
+
+            <div class="card">
+                <div class="row d-flex">
+                    <div class="container-fluid">
+                        <router-outlet></router-outlet>
+                        <div>
+                            <div processname="Foreclosure Progress">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="h-100">
+                                            <div class="row pb-1">
+                                                <div class="col-12 col-no-pad">
+                                                    <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+                                                        <div class="flex-grow-1">
+                                                            <div class="row">
+                                                                <div class="col-xl-12">
+                                                                    <div class="card-body form-steps wizard-cards">
+                                                                        <div class="row">
+                                                                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                                                                <div class="row d-flex">
+                                                                                    <div class="col-3 text-center d-flex justify-content-center">
+                                                                                        <span style="color: black; background-color: #e6eeff; width: 300px; height: 37px; text-align: center; padding: 5px; border-radius: 5px;">
+                                                                  Milestone
+                                                                </span>
+                                                                                    </div>
+                                                                                    <div class="col-9">
+                                                                                        <form class="app-search d-md-block mx-auto ml-5 ng-untouched ng-pristine ng-valid">
+                                                                                            <div class="position-relative">
+                                                                                                <input type="text" placeholder="    Search..." autocomplete="off" id="search-options" class="form-control ng-untouched ng-pristine ng-valid" style="background-color: gainsboro" />
+
+                                                                                                <span class="ri-search-line search-widget-icon"><i class="bi bi-search"></i></span>
+                                                                                            </div>
+                                                                                        </form>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="dilcard">
+                                                                                    <app-mile-card></app-mile-card>
+
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="nav nav-pills progress-bar-tab custom-nav">
+                                                                                        <div class="col-12 wizard-search-box">
+                                                                                            <div class="row">
+
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 progress-fs-box list-group">
+                                                                                <div>
+                                                                                    <div _ngcontent-tyd-c56="" class="row">
+                                                                                        <div _ngcontent-tyd-c56="" class="d-flex align-items-center mb-2 col-12">
+                                                                                            <h5 _ngcontent-tyd-c56="" class="fs-14 text-primary mb-0 ms-2">
+                                                                                                <i _ngcontent-tyd-c56="" class="ri-bill-line align-middle me-1 fs-17"></i> DIL Progress
+                                                                                            </h5>
+                                                                                            <i class="bi bi-arrow-clockwise" style="
+                                      position: fix;
+                                      margin-left: 200px;
+                                    "></i>
+                                                                                        </div>
+                                                                                    </div>
+
+
+                                                                                    <div class="card ribbon-box border shadow-none mb-lg-0 right progress-cards">
+                                                                                        <div class="card-body progress-ribbon-cards">
+                                                                                            <div>
+                                                                                                <div></div>
+                                                                                                <i class="bi bi-check-circle-fill"></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Loan Type
+                                    </span>
+                                    <span  class="badge fs-12 ms-2 float-sm-left"  style="color: #6699ff; background-color: rgb(24, 93, 146);">Conventional Insured/PMI</span>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="card ribbon-box border shadow-none mb-lg-0 right progress-cards" 
+                              >
+                                <div
+                                  class="card-body progress-ribbon-cards"
+                                >
+                                  <div>
+                                    <div></div>
+                                    <i class="bi bi-check-circle-fill"></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Investor Type
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                              >
+                                <div
+                                  class="card-body progress-ribbon-cards"
+                                >
+                                  <div>
+                                    <div></div>
+                                    <i class="bi bi-check-circle-fill"></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Client
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                            
+                              class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                            
+                            >
+                            
+                                <div
+                                  class="card-body progress-ribbon-cards"
+                                >
+                                  <div>
+                                    <div></div>
+                                    <i
+                                      class="bi bi-exclamation-circle-fill"
+                                    ></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      Milestone
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                         
+                          </div>                                          </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    </div>
+</div>
+
+</body>
