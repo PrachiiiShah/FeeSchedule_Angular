@@ -1,21 +1,27 @@
 <br>
-
 <div class="card-body">
 
     <div class="row">
 
-        <div class="col-3" *ngFor="let loan of loans" routerLinkActive="active" routerLink="/investor" (click)="selectLoan(loan.name)">
+        <div class="col-3" *ngFor="let client of clients" routerLinkActive="active" routerLink="/foremile" (click)="selectClient(client.name)">
 
-            <div class="milestone">
-                <div class="mile">
+            <div class="clientname">
+
+
+
+
+                <div class="client">
+
                     <div class="icon-container">
                         <i class="bi bi-check-circle-fill" width="30" height="50"></i>
                     </div>
-
-                    <h5> {{ loan.name }}</h5>
+                    <h5>{{ client.name }}</h5>
 
                 </div>
+
+
             </div>
+            <br>
         </div>
     </div>
 </div>

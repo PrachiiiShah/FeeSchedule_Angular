@@ -1,0 +1,33 @@
+.client h5 {
+    color: #6699ff;
+    margin-left: 30px;
+}
+
+.clientname {
+    display: flex;
+    width: auto;
+}
+
+.client:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.client {
+    flex: 1;
+    background-color: white;
+    height: 80px;
+    width: 210px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.icon-container {
+    position: relative;
+}
+
+.bi-check-circle-fill {
+    position: absolute;
+}

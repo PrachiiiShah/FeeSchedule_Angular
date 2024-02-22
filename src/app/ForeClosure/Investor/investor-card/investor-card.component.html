@@ -1,0 +1,39 @@
+<div class="card-body">
+    <div class="row">
+        <div class="col-3" *ngFor="let investor of investors" routerLinkActive="active" routerLink="/client" (click)="selectInvestor(investor.name)">
+            <br>
+            <div class="fees">
+                <div class="fee">
+                    <div class="icon-container">
+
+                        <i class="bi bi-check-circle-fill" width="30" height="50"></i>
+                    </div>
+
+
+
+                    <h5>{{investor.name}}</h5>
+                    <!-- <h5 routerLinkActive="active" routerLink="/fnam">FHLMC</h5>
+
+        </div>
+        <div class="fee">
+            <div class="icon-container">
+
+                <i class="bi bi-check-circle-fill" width="30" height="50"></i>
+            </div>
+
+            <h5 routerLinkActive="active" routerLink="/fnma">Other</h5>
+
+        </div>
+        <div class="fee">
+            <div class="icon-container">
+
+                <i class="bi bi-check-circle-fill" width="30" height="50"></i>
+            </div>
+
+            <h5 routerLinkActive="active" routerLink="/fnam">None</h5>
+
+        </div> -->
+                </div>
+            </div>
+        </div>
+    </div>

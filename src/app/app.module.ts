@@ -25,6 +25,13 @@ import { ForeTypeComponent } from './ForeClosure/fore-type/fore-type.component';
 import { ForeCardComponent } from './ForeClosure/fore-card/fore-card.component';
 import { LoanComponent } from './ForeClosure/loantype/loan/loan.component';
 import { LoanCardComponent } from './ForeClosure/loantype/loan-card/loan-card.component';
+
+import { InvestorCardComponent } from './ForeClosure/Investor/investor-card/investor-card.component';
+import { InvestorTypeComponent } from './ForeClosure/Investor/investor-type/investor-type.component';
+import { ClientCardComponent } from './ForeClosure/Client/client-card/client-card.component';
+import { ClientTypeComponent } from './ForeClosure/Client/client-type/client-type.component';
+import { MilestoneCardComponent } from './ForeClosure/MileStone/milestone-card/milestone-card.component';
+import { MilestoneTypeComponent } from './ForeClosure/MileStone/milestone-type/milestone-type.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +39,7 @@ import { LoanCardComponent } from './ForeClosure/loantype/loan-card/loan-card.co
      CardComponent,
     VerticalNavbarComponent,
      ForeClosureComponent,
-    HomeComponent, BarComponent, DILComponent, DilCardComponent, ConvCardComponent, FnmaComponent, ClientNameComponent, ConventionalComponent,MileStoneComponent, MileCardComponent, ForeTypeComponent, ForeCardComponent, LoanComponent, LoanCardComponent
+    HomeComponent, BarComponent, DILComponent, DilCardComponent, ConvCardComponent, FnmaComponent, ClientNameComponent, ConventionalComponent,MileStoneComponent, MileCardComponent, ForeTypeComponent, ForeCardComponent, LoanComponent, LoanCardComponent,InvestorCardComponent,InvestorTypeComponent, ClientCardComponent, ClientTypeComponent, MilestoneCardComponent, MilestoneTypeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,240 @@
+<body>
+
+    <div class="container">
+        <app-bar></app-bar>
+
+        <div class="row d-flex">
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+                <div>
+                    <div processname="Foreclosure Progress">
+                        <div class="row">
+                            <div class="col">
+                                <div class="h-100">
+                                    <div class="row pb-1">
+                                        <div class="col-12 col-no-pad">
+                                            <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+                                                <div class="flex-grow-1">
+                                                    <div class="row">
+                                                        <div class="col-xl-12">
+                                                            <div class="card-body form-steps wizard-cards">
+                                                                <div class="row">
+                                                                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                                                        <div class="row d-flex">
+                                                                            <div class="col-3 text-center d-flex justify-content-center">
+                                                                                <span style="color: black; background-color: #e6eeff; width: 300px; height: 37px; text-align: center; padding: 5px; border-radius: 5px;">
+                                                          Milestone
+                                                              </span>
+                                                                            </div>
+                                                                            <div class="col-9">
+                                                                                <form class="app-search d-md-block mx-auto ml-5 ng-untouched ng-pristine ng-valid">
+                                                                                    <div class="position-relative">
+                                                                                        <input type="text" placeholder="    Search..." autocomplete="off" id="search-options" class="form-control ng-untouched ng-pristine ng-valid" style="background-color: gainsboro" />
+
+                                                                                        <span class="ri-search-line search-widget-icon"><i class="bi bi-search"></i></span>
+                                                                                    </div>
+                                                                                </form>
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                        <div class="type">
+                                                                            <app-milestone-card></app-milestone-card>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="nav nav-pills progress-bar-tab custom-nav">
+                                                                                <div class="col-12 wizard-search-box">
+                                                                                    <div class="row">
+
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 progress-fs-box list-group">
+                                                                        <div>
+                                                                            <div _ngcontent-tyd-c56="" class="row">
+                                                                                <div _ngcontent-tyd-c56="" class="d-flex align-items-center mb-2 col-12">
+                                                                                    <h5 _ngcontent-tyd-c56="" class="fs-14 text-primary mb-0 ms-2">
+                                                                                        <i _ngcontent-tyd-c56="" class="ri-bill-line align-middle me-1 fs-17"></i> Foreclosure Progress
+                                                                                    </h5>
+                                                                                    <i class="bi bi-arrow-clockwise" style="
+                                    position: fix;
+                                    margin-left: 200px;
+                                  "></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div _ngcontent-tyd-c56="" class="card ribbon-box border shadow-none mb-lg-0 right progress-cards" style="cursor: pointer">
+                                                                                <div class="card ribbon-box border shadow-none mb-lg-0 right progress-cards">
+                                                                                    <div class="card-body progress-ribbon-cards">
+                                                                                        <div>
+                                                                                            <div></div>
+                                                                                            <i class="bi bi-check-circle-fill"></i
+                                    ><span
+                                      class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                    >
+                                      State
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                            >
+                              <div
+                                class="card-body progress-ribbon-cards"
+                              >
+                                <div>
+                                  <div></div>
+                                  <i
+                                    class="bi bi-check-circle-fill"
+                                  ></i
+                                  ><span
+                                    class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                  >
+                                    Foreclousre Type
+                                  </span>
+                                  <span class="badge fs-12 ms-2 float-sm-left"
+          style="
+            color: #6699ff;
+            background-color: rgb(
+              24,
+              93,
+              146
+            );
+          ">{{selectedForeclosuretype}}</span>       
+                                </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                            >
+                              <div
+                                class="card-body progress-ribbon-cards"
+                              >
+                                <div>
+                                  <div></div>
+                                  <i
+                                    class="bi bi-check-circle-fill"
+                                  ></i
+                                  ><span
+                                    class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                  >
+                                    Loan Type
+                                  </span>
+                                  <span class="badge fs-12 ms-2 float-sm-left"
+                                    style="
+                                      color: #6699ff;
+                                      background-color: rgb(
+                                        24,
+                                        93,
+                                        146
+                                      );
+                                    ">{{selectedLoan}}</span> 
+                         </div>
+                              </div>
+                            </div>
+
+                            <div
+                              class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                            >
+                              <div
+                                class="card-body progress-ribbon-cards"
+                              >
+                                <div>
+                                  <div></div>
+                                  <i
+                                    class="bi bi-check-circle-fill"
+                                  ></i
+                                  ><span
+                                    class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                  >
+                                    Investor Type
+                                  </span>
+                                  <span class="badge fs-12 ms-2 float-sm-left"
+                                    style="
+                                      color: #6699ff;
+                                      background-color: rgb(
+                                        24,
+                                        93, 
+                                        146
+                                      );
+                                    ">{{selectedInvestor}}</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                            >
+                              <div
+                                class="card-body progress-ribbon-cards"
+                              >
+                                <div>
+                                  <div></div>
+                                  <i
+                                    class="bi bi-check-circle-fill"
+                                  ></i
+                                  ><span
+                                    class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                  >
+                                    Client
+                                  </span>
+                                  <span class="badge fs-12 ms-2 float-sm-left"
+                                                style="
+                                                  color: #6699ff;
+                                                  background-color: rgb(
+                                                    24,
+                                                    93,
+                                                    146
+                                                  );
+                                                ">{{selectedClient}}</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div
+                            _ngcontent-tyd-c56=""
+                            class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                            style="cursor: default"
+                          >
+                            <div
+                              class="card ribbon-box border shadow-none mb-lg-0 right progress-cards"
+                            >
+                              <div
+                                class="card-body progress-ribbon-cards"
+                              >
+                                <div>
+                                  <div></div>
+                                  <i
+                                    class="bi bi-exclamation-circle-fill"
+                                  ></i
+                                  ><span
+                                    class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
+                                  >
+                                    Milestone
+                                  </span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
