@@ -3,7 +3,7 @@
 
     <div class="row">
 
-        <div class="col-3" *ngFor="let client of clients" routerLinkActive="active" routerLink="/milestone">
+        <div class="col-3" *ngFor="let client of clients" routerLinkActive="active" routerLink="/milestone" (click)="selectClient(client.name)">
 
             <div class="clientname">
 

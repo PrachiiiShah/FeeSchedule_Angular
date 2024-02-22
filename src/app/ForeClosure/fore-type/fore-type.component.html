@@ -23,7 +23,7 @@
                                                                         <div class="row d-flex">
                                                                             <div class="col-3 text-center d-flex justify-content-center">
                                                                                 <span style="color: black; background-color: #e6eeff; width: 300px; height: 37px; text-align: center; padding: 5px; border-radius: 5px;">
-                                                                    State
+                                                                  ForeClosure Type
                                                                 </span>
                                                                             </div>
                                                                             <div class="col-9">
@@ -35,28 +35,17 @@
                                                                                     </div>
                                                                                 </form>
                                                                             </div>
+
                                                                         </div>
 
+                                                                        <div class="type">
+                                                                            <app-fore-card></app-fore-card>
+                                                                        </div>
                                                                         <div class="row">
                                                                             <div class="nav nav-pills progress-bar-tab custom-nav">
                                                                                 <div class="col-12 wizard-search-box">
                                                                                     <div class="row">
-                                                                                        <div class="col-3" *ngFor="let state of states" routerLinkActive="active" routerLink="/foreclosuretype" (click)="selectState(state.name)">
-                                                                                            <input type="radio" checked="" class="btn-check ml-auto" />
-                                                                                            <label for="invoice-outlined" placement="bottom" class="ms-auto w-100">
-             <br>                                                                                                                                                    <div class="card-body">
-                                                                                                                                                                  <div class="state">                                                                                                                                                 <div class="d-flex mb-1 align-items-center">
-                                                                                        <div class="flex-shrink-0 avatar-sm">
-                                                                                            <span class="avatar-title bg-light display-3 rounded-circle fs-24"><i class="ri-checkbox-circle-fill"></i></span>
-                                                                                        </div>
-                                                                                      </div>                                                                                                                                                          <div class="flex-grow-1 ms-2">
-                                                                           <h5 class="card-title mb-1 fs-14 text-primary">{{ state.abbreviation }}</h5>
-                                                                                            <p class="mb-0 fs-12 text-soft-primary">{{ state.name }}</p>
-                                                                                                                                                                       </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </label>
-                                                                                        </div>
+
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -80,12 +69,21 @@
                                                                                     <div class="card-body progress-ribbon-cards">
                                                                                         <div>
                                                                                             <div></div>
-                                                                                            <i class="bi bi-exclamation-circle-fill"></i
+                                                                                            <i class="bi bi-check-circle-fill"></i
                                       ><span
                                         class="badge fs-12 ms-2 float-sm-left badge-title text-bg-warning"
                                       >
                                         State
                                       </span>
+                                      <span class="badge fs-12 ms-2 float-sm-left"
+                                                style="
+                                                  color: #6699ff;
+                                                  background-color: rgb(
+                                                    24,
+                                                    93,
+                                                    146
+                                                  );
+                                                ">{{selectedState}}</span>  
                                     </div>
                                   </div>
                                 </div>

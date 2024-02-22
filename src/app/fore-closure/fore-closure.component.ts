@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BarComponent} from '../bar/bar.component';
-
-
+import { StateService } from '../Services/state.service';
 
 @Component({
   selector: 'app-fore-closure',
@@ -20,32 +19,35 @@ export class ForeClosureComponent {
     { abbreviation: 'CA', name: 'California' }
   ];
 
-  filteredStates: { abbreviation: string, name: string }[] = [];
-  searchTerm: string = '';
+  // filteredStates: { abbreviation: string, name: string }[] = [];
+  // searchTerm: string = '';
 
-  ngOnInit() {
-    // Initialize filteredStates with all states
-    this.filteredStates = [...this.states];
+  // ngOnInit() {
+  //   this.filteredStates = [...this.states];
+  // }
+  constructor(private StateService: StateService) { }
+  selectState(stateName: string) {
+    this.StateService.setSelectedState(stateName);
   }
+  // filterStates() {
+  
+  //   console.log('Search term before filtering:', this.searchTerm);
 
-  filterStates() {
-    // Log the value of searchTerm before filtering
-    console.log('Search term before filtering:', this.searchTerm);
+   
+  //   this.filteredStates = this.states.filter(state =>
+  //     state.name.toLowerCase().includes(this.searchTerm.toLowerCase())
+  //   );
 
-    // Filter states based on the search term
-    this.filteredStates = this.states.filter(state =>
-      state.name.toLowerCase().includes(this.searchTerm.toLowerCase())
-    );
 
-    // Log the filtered states after filtering
-    console.log('Filtered states:', this.filteredStates);
+  //   console.log('Filtered states:', this.filteredStates);
   
   
 
-    console.log('Search term 2:', this.searchTerm);
-    console.log('Filtered states:', this.filteredStates);
+  //   console.log('Search term 2:', this.searchTerm);
+  //   console.log('Filtered states:', this.filteredStates);
+  // }
+  ngOnInit(): void {
   }
-  
  
 }
 

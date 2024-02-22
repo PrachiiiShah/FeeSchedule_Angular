@@ -1,6 +1,6 @@
 <div class="card-body">
     <div class="row">
-        <div class="col-3" *ngFor="let investor of investors" routerLinkActive="active" routerLink="/fnma">
+        <div class="col-3" *ngFor="let investor of investors" routerLinkActive="active" routerLink="/fnma" (click)="selectInvestor(investor.name)">
             <br>
             <div class="fees">
                 <div class="fee">

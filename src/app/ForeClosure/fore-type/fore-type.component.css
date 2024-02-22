@@ -1,0 +1,28 @@
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.app-search span.search-widget-icon {
+    position: absolute;
+    z-index: 10;
+    font-size: 18px;
+    line-height: 38px;
+    left: 13px;
+    top: 0;
+    color: #878a99;
+}
+
+
+/* .container-fluid {
+    height: 100vh;
+    padding: 0px;
+} */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+}
