@@ -1,44 +1,18 @@
-.feeSchedule {
-    background-color: #e6eeff;
-    width: 190px;
-    border-radius: 5px;
-}
-
-h5 {
-    text-align: center;
-    color: #6699ff;
-}
-
 .fee:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-}
-
 .fees {
     display: flex;
-    width: auto;
     /* justify-content: space-between; */
 }
 
 .fee {
+    flex: 1;
     width: 15%;
+    height: 80px;
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -46,12 +20,12 @@ h1 {
 }
 
 .fee h5 {
-    text-align: center;
+    color: #6699ff;
+    margin-left: 30px;
 }
 
 .icon-container {
     position: relative;
-    /* display: inline-block; */
 }
 
 .bi-check-circle-fill {

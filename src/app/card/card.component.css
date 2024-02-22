@@ -10,53 +10,32 @@
     border-radius: 5px;
 }
 
-h5 {
-    text-align: center;
-    color: #6699ff;
-}
-
 .fee:hover {
     transform: translateY(-5px);
     transition: transform 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-}
-
 .fees {
     display: flex;
-    /* justify-content: space-between; */
 }
 
 .fee {
-    width: 15%;
+    /* flex: 1; */
     background-color: white;
     padding: 20px;
+    width: 220px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .fee h5 {
-    text-align: center;
+    margin-left: 30px;
+    color: #6699ff;
 }
 
 .icon-container {
     position: relative;
-    /* display: inline-block; */
 }
 
 .bi-check-circle-fill {

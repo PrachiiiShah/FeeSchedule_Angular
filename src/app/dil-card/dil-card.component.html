@@ -1,43 +1,16 @@
+<br>
 <div class="card-body">
+    <div class="row">
+        <div class="col-3" *ngFor="let loan of loans" routerLinkActive="active" routerLink="/conventional">
+            <div class="fees">
+                <div class="fee">
+                    <div class="icon-container">
 
-    <br>
-    <div class="fees">
-        <div class="fee">
-            <div class="icon-container">
+                        <i class="bi bi-check-circle-fill" width="30" height="50"></i>
+                    </div>
+                    <h5> {{ loan.name }}</h5>
 
-                <i class="bi bi-check-circle-fill" width="30" height="50"></i>
+                </div>
             </div>
-            <h5 routerLinkActive="active" routerLink="/conventional" style="margin-left: 15%;">Conventional Insured/PMI</h5>
-
         </div>
-        <div class="fee">
-            <div class="icon-container">
-
-                <i class="bi bi-check-circle-fill" width="30" height="50"></i>
-            </div>
-
-            <h5 routerLinkActive="active" routerLink="/fh">FHA</h5>
-
-        </div>
-        <div class="fee">
-            <div class="icon-container">
-
-                <i class="bi bi-check-circle-fill" width="30" height="50"></i>
-            </div>
-
-            <h5 routerLinkActive="active" routerLink="/usda">USDA</h5>
-
-        </div>
-        <div class="fee">
-            <div class="icon-container">
-
-                <i class="bi bi-check-circle-fill" width="30" height="50"></i>
-            </div>
-
-            <h5 routerLinkActive="active" routerLink="/va">VA</h5>
-
-        </div>
-
     </div>
-
-</div>

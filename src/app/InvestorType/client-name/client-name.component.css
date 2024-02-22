@@ -15,6 +15,7 @@
 }
 
 .client {
+    flex: 1;
     background-color: white;
     height: 80px;
     width: 210px;

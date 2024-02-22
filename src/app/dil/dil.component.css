@@ -13,6 +13,13 @@ body {
     height: 100vh;
 }
 
+
+/* .card {
+    width: 1500px;
+    height: 200px;
+    margin-left: 70px;
+} */
+
 .card {
     margin-left: 5%;
 }

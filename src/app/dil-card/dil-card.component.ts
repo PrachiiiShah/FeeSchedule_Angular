@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dil-card.component.css']
 })
 export class DilCardComponent {
-
+loans=[{name:'Conventional Insured/PMI'},{name:'FHA'},{name:"USDA"},{name:'VA'}];
+constructor() { }
+     ngOnInit(): void {
+     }
+    
 }

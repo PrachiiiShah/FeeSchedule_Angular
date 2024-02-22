@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./conv-card.component.css']
 })
 export class ConvCardComponent {
-
+investors=[{name:'FNMA'},{name:'FHLMC'},{name:'Other'},{name:'None'}];
 }

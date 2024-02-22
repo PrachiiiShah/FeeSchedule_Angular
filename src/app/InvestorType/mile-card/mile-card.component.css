@@ -9,6 +9,7 @@
 }
 
 .mile {
+    flex: 1;
     background-color: white;
     height: 80px;
     padding: 20px;

@@ -5,9 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DILComponent } from './dil/dil.component';
 import { ConventionalComponent } from './DilComponent/conventional/conventional.component';
-import { USDAComponent } from './DilComponent/usda/usda.component';
-import { VAComponent } from './DilComponent/va/va.component';
-import { FhComponent } from './DilComponent/fh/fh.component';
+
 import { FnmaComponent } from './InvestorType/fnma/fnma.component';
 import { MileStoneComponent } from './InvestorType/mile-stone/mile-stone.component';
 const routes: Routes = [
@@ -16,9 +14,7 @@ const routes: Routes = [
   { path: 'foreclosure', component: ForeClosureComponent },
   { path: 'dil', component: DILComponent },
   {path: 'conventional', component: ConventionalComponent},
-  { path: 'usda', component: USDAComponent },
-  { path: 'va', component: VAComponent },
-  { path: 'fh', component: FhComponent },
+ 
   {path:'fnma',component:FnmaComponent},
   {path:'milestone',component:MileStoneComponent}
 

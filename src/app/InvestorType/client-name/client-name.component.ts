@@ -10,10 +10,7 @@ clients=[
  {name:'Bank of America'},{
 name:'Caliber'},{name:'Carrington'},{name:"Champion"},{name:"Chase"},{name:'Community Loan Servicing'},{name:'M&T Bank'},{name:'PennyMac'},{name:'US Bank'},{name:'RoundPoint'},{name:'Selene'}];
 
-  // clientName = this.clients[0].name;
-  //  setClient(client) {
-  //   this.clientName = client.name;
-  // }
+
   constructor() { }
   ngOnInit(): void {
   }
