@@ -1,0 +1,43 @@
+.mile h4 {
+    color: black;
+}
+
+.mile h6 {
+    color: gray;
+}
+
+.milestone {
+    display: flex;
+    width: auto;
+}
+
+.mile {
+    flex: 1;
+    background-color: white;
+    height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    height: 120px;
+    width: 800px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.milestone:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}

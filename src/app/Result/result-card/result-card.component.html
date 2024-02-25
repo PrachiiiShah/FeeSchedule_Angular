@@ -1,0 +1,20 @@
+<br>
+
+<div class="card-body">
+    <div class="row">
+        <div class="col-3" *ngFor="let fee of fees">
+            <div class="milestone">
+                <div class="mile">
+                    <h6>{{fee.abbreviation}}</h6>
+                    <h4> {{ fee.name }}</h4>
+
+                </div>
+            </div>
+
+            <br>
+        </div>
+    </div>
+    <div class="card">
+        <h6 style="color: gray;">INSTRUCTIONS AT LOAN TYPE LEVEL</h6>
+        <h4>If the loan type is VA, no matter the investor, you should always bill fees according to the VA allowable</h4>
+    </div>

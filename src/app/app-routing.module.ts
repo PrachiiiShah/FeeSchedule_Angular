@@ -12,6 +12,8 @@ import { MileStoneComponent } from './InvestorType/mile-stone/mile-stone.compone
 import { InvestorTypeComponent } from './ForeClosure/Investor/investor-type/investor-type.component';
 import { ClientTypeComponent } from './ForeClosure/Client/client-type/client-type.component';
 import { MilestoneTypeComponent } from './ForeClosure/MileStone/milestone-type/milestone-type.component';
+import { DilResultComponent } from './Result/dil-result/dil-result.component';
+import { ForResultComponent } from './ForeClosure/for-result/for-result.component';
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '', component: HomeComponent },
@@ -20,7 +22,7 @@ const routes: Routes = [
   {path: 'conventional', component: ConventionalComponent},
  {path:'foreclosuretype',component:ForeTypeComponent},{path:'loan',component:LoanComponent},
   {path:'fnma',component:FnmaComponent},
-  {path:'milestone',component:MileStoneComponent},{path:'investor',component:InvestorTypeComponent},{path:'client',component:ClientTypeComponent},{path:'foremile',component:MilestoneTypeComponent}
+  {path:'milestone',component:MileStoneComponent},{path:'investor',component:InvestorTypeComponent},{path:'client',component:ClientTypeComponent},{path:'foremile',component:MilestoneTypeComponent},{path:'dil-result',component:DilResultComponent},{path:'fore-result',component:ForResultComponent}
 
   
 ];

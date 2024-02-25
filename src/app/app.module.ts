@@ -32,6 +32,9 @@ import { ClientCardComponent } from './ForeClosure/Client/client-card/client-car
 import { ClientTypeComponent } from './ForeClosure/Client/client-type/client-type.component';
 import { MilestoneCardComponent } from './ForeClosure/MileStone/milestone-card/milestone-card.component';
 import { MilestoneTypeComponent } from './ForeClosure/MileStone/milestone-type/milestone-type.component';
+import { DilResultComponent } from './Result/dil-result/dil-result.component';
+import { ResultCardComponent } from './Result/result-card/result-card.component';
+import { ForResultComponent } from './ForeClosure/for-result/for-result.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +42,7 @@ import { MilestoneTypeComponent } from './ForeClosure/MileStone/milestone-type/m
      CardComponent,
     VerticalNavbarComponent,
      ForeClosureComponent,
-    HomeComponent, BarComponent, DILComponent, DilCardComponent, ConvCardComponent, FnmaComponent, ClientNameComponent, ConventionalComponent,MileStoneComponent, MileCardComponent, ForeTypeComponent, ForeCardComponent, LoanComponent, LoanCardComponent,InvestorCardComponent,InvestorTypeComponent, ClientCardComponent, ClientTypeComponent, MilestoneCardComponent, MilestoneTypeComponent
+    HomeComponent, BarComponent, DILComponent, DilCardComponent, ConvCardComponent, FnmaComponent, ClientNameComponent, ConventionalComponent,MileStoneComponent, MileCardComponent, ForeTypeComponent, ForeCardComponent, LoanComponent, LoanCardComponent,InvestorCardComponent,InvestorTypeComponent, ClientCardComponent, ClientTypeComponent, MilestoneCardComponent, MilestoneTypeComponent, DilResultComponent, ResultCardComponent, ForResultComponent
   ],
   imports: [
     BrowserModule,

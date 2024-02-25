@@ -2,7 +2,7 @@
 
 <div class="card-body">
     <div class="row">
-        <div class="col-3" *ngFor="let milestone of milestones" routerLinkActive="active" routerLink="/">
+        <div class="col-3" *ngFor="let milestone of milestones" routerLinkActive="active" routerLink="/fore-result" (click)="selectedMilestone(milestone.name)">
             <div class="milestone">
                 <div class="mile">
                     <div class="icon-container">
@@ -12,5 +12,6 @@
 
                 </div>
             </div>
+            <br>
         </div>
     </div>
