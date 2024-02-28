@@ -1,0 +1,46 @@
+<div class="mb-5">
+    <div class="text-center mb-4">
+
+    </div>
+    <br>
+    <h4 class="text-center mb-4"> <img src="https://beta-feeschedule.outamationlabs.com/assets/images/a360inc-logo.png"></h4>
+
+</div>
+<form (ngSubmit)="register(registrationForm)" #registrationForm="ngForm">
+    <h4 class="text-center mb-4" style="color: rgb(7, 73, 73);">Welcome to Fee Schedule!</h4>
+    <input type="text" name="firstName" [(ngModel)]="firstName" placeholder="First Name" required>
+    <div *ngIf="registrationForm.controls['firstName'].invalid && (registrationForm.controls['firstName'].dirty || registrationForm.controls['firstName'].touched)">
+        <span class="error">First Name is required</span>
+    </div>
+    <br>
+    <input type="text" name="lastName" [(ngModel)]="lastName" placeholder="Last Name" required>
+    <div *ngIf="registrationForm.controls['lastName'].invalid && (registrationForm.controls['lastName'].dirty || registrationForm.controls['lastName'].touched)">
+        <span class="error">Last Name is required</span>
+    </div>
+    <br>
+    <input type="email" name="email" [(ngModel)]="email" placeholder="Email" required>
+    <div *ngIf="registrationForm.controls['email'].invalid && (registrationForm.controls['email'].dirty || registrationForm.controls['email'].touched)">
+        <span class="error">Email is required</span>
+    </div>
+    <br>
+    <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required>
+    <div *ngIf="registrationForm.controls['password'].invalid && (registrationForm.controls['password'].dirty || registrationForm.controls['password'].touched)">
+        <span class="error">Password is required</span>
+    </div>
+    <br>
+    <input type="password" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Confirm Password" required>
+    <div *ngIf="registrationForm.controls['confirmPassword'].invalid && (registrationForm.controls['confirmPassword'].dirty || registrationForm.controls['confirmPassword'].touched)">
+        <span class="error">Confirm Password is required</span>
+    </div>
+    <br>
+    <select name="role" [(ngModel)]="role" required>
+      <option value="user">User</option>
+      <option value="admin">Admin</option>
+    </select>
+    <div *ngIf="registrationForm.controls['role'].invalid && (registrationForm.controls['role'].dirty || registrationForm.controls['role'].touched)">
+        <span class="error">Role is required</span>
+    </div>
+    <br>
+    <button type="submit">Register</button>
+</form>
+<p class="m-0 text-secondary text-center">Already have an account? <a href="/login" class="link-primary text-decoration-none">Sign in</a></p>

@@ -1,0 +1,51 @@
+<!-- <body>
+    <div class="container">
+        <app-vertical-navbar>
+        </app-vertical-navbar>
+        <div class="content">
+            <app-navbar></app-navbar>
+            <h2>Registration History</h2>
+            <ul>
+                <li *ngFor="let user of registrationHistory">
+                    <p>{{ user.firstName }} - {{ user.lastName }} - {{user.role}} - {{ user.timestamp | date: 'medium' }}</p>
+                </li>
+            </ul>
+
+
+
+        </div>
+    </div>
+</body> -->
+
+<!-- history.component.html -->
+
+<div class="container">
+    <app-vertical-navbar></app-vertical-navbar>
+    <div class="content">
+        <app-navbar></app-navbar>
+        <h2>Registration History</h2>
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+
+                    <th>First Name</th>
+                    <th>Last Name</th>
+
+                    <th>Registration Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of registrationHistory; let i = index">
+                    <td>{{ i + 1 }}</td>
+
+                    <td>{{ user.firstName }}</td>
+                    <td>{{ user.lastName}}</td>
+
+                    <td>{{ user.timestamp | date: 'medium' }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

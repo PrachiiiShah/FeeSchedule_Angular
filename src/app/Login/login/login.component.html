@@ -1,0 +1,22 @@
+<div class="mb-5">
+    <div class="text-center mb-4">
+
+    </div>
+    <br>
+    <h4 class="text-center mb-4"> <img src="https://beta-feeschedule.outamationlabs.com/assets/images/a360inc-logo.png"></h4>
+
+</div>
+<form (ngSubmit)="login()" #loginForm="ngForm">
+    <h4 class="text-center mb-4" style="color: rgb(7, 73, 73);">Welcome Back to Fee Schedule!</h4>
+    <input type="email" name="email" [(ngModel)]="email" placeholder="Email" required>
+    <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+        <span class="error">Email is required</span>
+    </div>
+    <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required>
+    <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+        <span class="error">Password is required</span>
+    </div>
+    <button type="submit">Login</button>
+    <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+</form>
+<p class="m-0 text-secondary text-center">Don't have an account? <a href="/registration" class="link-primary text-decoration-none">Register Yourself!</a></p>
