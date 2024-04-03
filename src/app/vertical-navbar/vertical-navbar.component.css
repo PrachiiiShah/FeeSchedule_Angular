@@ -52,7 +52,6 @@
     padding-top: 10px;
     display: flex;
     flex-direction: column;
-    /* Align menu items below PS */
 }
 
 .menu-item {
@@ -78,5 +77,4 @@
 
 .sidebar.expanded .menu-name {
     display: block;
-    /* Show menu names when sidebar is expanded */
 }

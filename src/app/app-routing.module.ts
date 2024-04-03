@@ -17,15 +17,17 @@ import { ForResultComponent } from './ForeClosure/for-result/for-result.componen
 import{LoginComponent} from './Login/login/login.component';
 import { RegComponent } from './Registration/reg/reg.component';
 import { HistoryComponent } from './User/history/history.component';
+import { ForeEditComponent } from './Edit/fore-edit/fore-edit.component';
+
 const routes: Routes = [
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'foreclosure', component: ForeClosureComponent },
   { path: 'dil', component: DILComponent },
   {path: 'conventional', component: ConventionalComponent},
  {path:'foreclosuretype',component:ForeTypeComponent},{path:'loan',component:LoanComponent},
   {path:'fnma',component:FnmaComponent},
-  {path:'milestone',component:MileStoneComponent},{path:'investor',component:InvestorTypeComponent},{path:'client',component:ClientTypeComponent},{path:'foremile',component:MilestoneTypeComponent},{path:'dil-result',component:DilResultComponent},{path:'fore-result',component:ForResultComponent},{path:'registration',component:RegComponent},{path:'login',component:LoginComponent},{path:'history',component:HistoryComponent}
+  {path:'milestone',component:MileStoneComponent},{path:'investor',component:InvestorTypeComponent},{path:'client',component:ClientTypeComponent},{path:'foremile',component:MilestoneTypeComponent},{path:'dil-result',component:DilResultComponent},{path:'fore-result',component:ForResultComponent},{path:'',component:RegComponent},{path:'login',component:LoginComponent},{path:'history',component:HistoryComponent},{path:'edit',component:ForeEditComponent}
 
   
 ];

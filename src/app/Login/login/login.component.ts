@@ -24,7 +24,7 @@ export class LoginComponent {
 login() {
   const result = this.authService.login(this.email, this.password);
   if (result === true) {
-    this.router.navigate(['/client']);
+    this.router.navigate(['/home']);
   } else {
     this.errorMessage = result as string;
   }

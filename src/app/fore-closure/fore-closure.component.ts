@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BarComponent} from '../bar/bar.component';
 import { StateService } from '../Services/state.service';
-
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-fore-closure',
   templateUrl: './fore-closure.component.html',
@@ -11,6 +11,7 @@ import { StateService } from '../Services/state.service';
 })
 
 export class ForeClosureComponent {
+  userArray: any[]=[];
   states = [
     { abbreviation: 'AK', name: 'Alaska' },
     { abbreviation: 'AL', name: 'Alabama' },
@@ -19,16 +20,30 @@ export class ForeClosureComponent {
     { abbreviation: 'CA', name: 'California' }
   ];
 
+ 
+
   // filteredStates: { abbreviation: string, name: string }[] = [];
   // searchTerm: string = '';
 
   // ngOnInit() {
   //   this.filteredStates = [...this.states];
   // }
-  constructor(private StateService: StateService) { }
+  constructor(private StateService: StateService, private http:HttpClient) { 
+    // this.getAllUser();
+  }
   selectState(stateName: string) {
     this.StateService.setSelectedState(stateName);
   }
+  // getAllUser(){
+  //   this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((data)=>{
+  //     console.log(data);
+  //   })
+  
+  //   }
+  // getAllUser(){
+  //   this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((res:any)=>{this.userArray=res;
+  // })
+  // }
   // filterStates() {
   
   //   console.log('Search term before filtering:', this.searchTerm);
@@ -46,8 +61,8 @@ export class ForeClosureComponent {
   //   console.log('Search term 2:', this.searchTerm);
   //   console.log('Filtered states:', this.filteredStates);
   // }
-  ngOnInit(): void {
-  }
+  // ngOnInit(): void {
+  // }
  
 }
 

@@ -19,9 +19,9 @@ export class RegComponent {
   register(registrationForm: NgForm) {
     if (this.password === this.confirmPassword) {
       try {
-        this.authService.register(this.firstName, this.lastName, this.email, this.password);
+        this.authService.register(this.firstName, this.lastName, this.email,this.password);
         alert('Registration successful');
-        this.router.navigate(['/history']);
+        this.router.navigate(['/login']);
       } catch (error:any) {
         alert(error.message);
       }

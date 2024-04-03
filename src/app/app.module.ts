@@ -19,6 +19,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ConvCardComponent } from './DilComponent/conv-card/conv-card.component';
 import { FnmaComponent } from './InvestorType/fnma/fnma.component';
 import { ClientNameComponent } from './InvestorType/client-name/client-name.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MileStoneComponent } from './InvestorType/mile-stone/mile-stone.component';
 import { MileCardComponent } from './InvestorType/mile-card/mile-card.component';
 import { ForeTypeComponent } from './ForeClosure/fore-type/fore-type.component';
@@ -35,10 +36,13 @@ import { MilestoneTypeComponent } from './ForeClosure/MileStone/milestone-type/m
 import { DilResultComponent } from './Result/dil-result/dil-result.component';
 import { ResultCardComponent } from './Result/result-card/result-card.component';
 import { ForResultComponent } from './ForeClosure/for-result/for-result.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { AuthService } from './Registration/auth.service';
 import { RegComponent } from './Registration/reg/reg.component';
 import { LoginComponent } from './Login/login/login.component';
 import { HistoryComponent } from './User/history/history.component';
+import { ForeEditComponent } from './Edit/fore-edit/fore-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,12 +50,12 @@ import { HistoryComponent } from './User/history/history.component';
      CardComponent,
     VerticalNavbarComponent,
      ForeClosureComponent,
-    HomeComponent, BarComponent, DILComponent, DilCardComponent, ConvCardComponent, FnmaComponent, ClientNameComponent, ConventionalComponent,MileStoneComponent, MileCardComponent, ForeTypeComponent, ForeCardComponent, LoanComponent, LoanCardComponent,InvestorCardComponent,InvestorTypeComponent, ClientCardComponent, ClientTypeComponent, MilestoneCardComponent, MilestoneTypeComponent, DilResultComponent, ResultCardComponent, ForResultComponent, RegComponent, LoginComponent, HistoryComponent
+    HomeComponent, BarComponent, DILComponent, DilCardComponent, ConvCardComponent, FnmaComponent, ClientNameComponent, ConventionalComponent,MileStoneComponent, MileCardComponent, ForeTypeComponent, ForeCardComponent, LoanComponent, LoanCardComponent,InvestorCardComponent,InvestorTypeComponent, ClientCardComponent, ClientTypeComponent, MilestoneCardComponent, MilestoneTypeComponent, DilResultComponent, ResultCardComponent, ForResultComponent, RegComponent, LoginComponent, HistoryComponent, ForeEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule, ReactiveFormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

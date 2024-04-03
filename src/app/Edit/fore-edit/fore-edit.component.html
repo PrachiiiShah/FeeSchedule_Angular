@@ -1,0 +1,333 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+<body>
+    <div class="container">
+        <app-vertical-navbar> </app-vertical-navbar>
+        <div class="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <img src="https://beta-feeschedule.outamationlabs.com/assets/images/a360inc-logo.png" />
+                            </li>
+                            <li class="nav-item">
+                                <h4 style="color: #6699ff">| Insert Fee Schedule</h4>
+                            </li>
+                            <li>
+                                <div class="toggle">
+                                    <button class="btn">
+                    <i
+                      class="bi bi-fullscreen"
+                      (click)="toggleFullScreen()"
+                    ></i>
+                  </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <br />
+            <br />
+
+            <div class="card" style="width:1150px">
+                <div class="row d-flex">
+                    <div class="container-fluid">
+                        <router-outlet></router-outlet>
+                        <div>
+                            <div processname="Foreclosure Progress">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="h-100">
+                                            <div class="row pb-1">
+                                                <div class="col-12 col-no-pad">
+                                                    <div class="d-flex align-items-lg-center flex-lg-row flex-column">
+                                                        <div class="flex-grow-1">
+                                                            <div class="row">
+                                                                <div class="col-xl-10">
+                                                                    <div class="card-body form-steps wizard-cards">
+                                                                        <div class="row">
+                                                                            <!-- <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8"> -->
+                                                                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 progress-fs-box list-group">
+                                                                                <div class="row d-flex">
+                                                                                    <div class="card" style="width: 300px;">
+                                                                                        <div _ngcontent-tyd-c56="" class="d-flex align-items-center mb-2 col-12">
+
+                                                                                            <span style="color: black; background-color: #e6eeff; width: 80px;  padding: 5px; border-radius: 5px; margin-top:8px">
+                                                                                                Lookups
+                                                                                                    </span> <i class="bi bi-arrow-clockwise" style="
+                                                                                        position: fix;
+                                                                                        margin-left: 150px;
+                                                                                      "></i>
+
+                                                                                        </div>
+
+                                                                                        <br> <label for="state">State <span style="color: red">*</span></label>
+
+
+
+
+
+
+                                                                                        <div class="state-dropdown">
+                                                                                            <select [(ngModel)]="selectedState" required>
+                                                                                                                                                     <option *ngFor="let state of states" [value]="state" >    
+                                                                                                                                                             {{ state.name }}
+                                                                                              </option>
+                                                                                            </select>
+
+                                                                                            <div *ngIf="!selectedState" class="error-message">
+                                                                                                Please select a state.
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <br>
+                                                                                        <label for="state">Client <span style="color: red">*</span></label>
+
+
+
+
+
+
+                                                                                        <div class="state-dropdown">
+                                                                                            <select [(ngModel)]="selectedState" required>
+                                                                                                                                                     <option *ngFor="let state of states" [value]="state" >    
+                                                                                                                                                             {{ state.name }}
+                                                                                              </option>
+                                                                                            </select>
+
+                                                                                            <div *ngIf="!selectedState" class="error-message">
+                                                                                                Please select a client.
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <br> <label for="state">Investor Type <span style="color: red">*</span></label>
+
+
+
+
+
+
+                                                                                        <div class="state-dropdown">
+                                                                                            <select [(ngModel)]="selectedState" required>
+                                                                                                                                                     <option *ngFor="let state of states" [value]="state" >    
+                                                                                                                                                             {{ state.name }}
+                                                                                              </option>
+                                                                                            </select>
+
+                                                                                            <div *ngIf="!selectedState" class="error-message">
+                                                                                                Please select a investor type.
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <br> <label for="state">Foreclosure Type <span style="color: red">*</span></label>
+
+
+
+
+
+
+                                                                                        <div class="state-dropdown">
+                                                                                            <select [(ngModel)]="selectedState" required>
+                                                                                                                                                     <option *ngFor="let state of states" [value]="state" >    
+                                                                                                                                                             {{ state.name }}
+                                                                                              </option>
+                                                                                            </select>
+
+                                                                                            <div *ngIf="!selectedState" class="error-message">
+                                                                                                Please select a foreclosure type.
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <br> <label for="state">Case Status <span style="color: red">*</span></label>
+
+
+
+
+
+
+                                                                                        <div class="state-dropdown">
+                                                                                            <select [(ngModel)]="selectedState" required>
+                                                                                                                                                     <option *ngFor="let state of states" [value]="state" >    
+                                                                                                                                                             {{ state.name }}
+                                                                                              </option>
+                                                                                            </select>
+
+                                                                                            <div *ngIf="!selectedState" class="error-message">
+                                                                                                Please select a case status.
+                                                                                            </div>
+                                                                                        </div> <br><label for="state">Loan Type <span style="color: red">*</span></label>
+
+
+
+
+
+
+                                                                                        <div class="state-dropdown">
+                                                                                            <select [(ngModel)]="selectedState" required>
+                                                                                                                                                     <option *ngFor="let state of states" [value]="state" >    
+                                                                                                                                                             {{ state.name }}
+                                                                                              </option>
+                                                                                            </select>
+
+                                                                                            <div *ngIf="!selectedState" class="error-message">
+                                                                                                Please select a loan type.
+                                                                                            </div>
+                                                                                        </div> <br>
+                                                                                        <label for="state">Hold/Closed Reason <span style="color: red">*</span></label>
+
+
+
+
+
+
+                                                                                        <div class="state-dropdown">
+                                                                                            <select [(ngModel)]="selectedState" required>
+                                                                                                                                                     <option *ngFor="let state of states" [value]="state" >    
+                                                                                                                                                             {{ state.name }}
+                                                                                              </option>
+                                                                                            </select>
+
+                                                                                            <div *ngIf="!selectedState" class="error-message">
+                                                                                                Please select a hold/closed reason.
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                                <div class="row">
+                                                                                    <div class="nav nav-pills progress-bar-tab custom-nav">
+                                                                                        <div class="col-12 wizard-search-box">
+                                                                                            <div class="row"></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+
+                                                                            <!-- <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 progress-fs-box list-group"> -->
+                                                                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+
+
+                                                                                <div></div>
+                                                                                <div class="card" style="margin-left: 0px;width:800px">
+                                                                                    <div class="d-flex align-items-center mb-2 col-12">
+                                                                                        <span style="color: black;text-align:center; background-color: #e6eeff; width: 80px;  padding: 5px; border-radius: 5px; margin-top:8px;margin-left:10px">
+                                                                                        Data
+                                                                                            </span>
+                                                                                        <button style="color: black; width: 80px;  padding: 5px; border-radius: 5px; margin-top:8px; margin-left:610px; text-align:center; border: 1px solid black;">
+                                                                                                Upload
+                                                                                                    </button> </div>
+
+
+                                                                                    <div class="card" style="margin-left: 10px; margin-right:10px">
+                                                                                        <i class="bi bi-clipboard" style="text-align:right; margin-right: 10px;">
+                                                                                                <i class="bi bi-plus-circle-fill" style="margin-right: 10px; margin-left:10px"></i>
+                                                                                        <i class="bi bi-caret-down"></i>
+                                                                                        </i>
+                                                                                        <br>
+                                                                                        <form>
+
+                                                                                            <div class="d-flex align-items-center mb-2 col-12">
+                                                                                                <div class="form-group" style="margin-left: 4px">
+                                                                                                    <label for="totalAmount">Total Amount</label><span style="color: red">*</span>
+                                                                                                    <input type="totalAmount" class="form-control" id="totalAmount" placeholder="Total Amount" style="width:150px">
+
+                                                                                                </div>
+
+                                                                                                <div class="form-group" style="margin-left: 10px;">
+                                                                                                    <label for="claimDate">First legal/Claim date</label>
+                                                                                                    <input type="date" class="form-control" id="claimDate" style="width:150px">
+
+                                                                                                </div>
+                                                                                                <div class="form-group" style="margin-left: 10px;">
+                                                                                                    <label for="startDate">Referral  Staet Date</label>
+                                                                                                    <input type="date" class="form-control" id="startDate" style="width:150px">
+
+                                                                                                </div>
+                                                                                                <div class="form-group" style="margin-left: 10px;">
+                                                                                                    <label for="secondaryDate">Secondary Refferal Date</label>
+                                                                                                    <input type="date" class="form-control" id="secondaryDate" style="width:150px">
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </form>
+
+                                                                                    </div>
+                                                                                    <br>
+                                                                                    <div class="card" style="margin-left: 10px; margin-right:10px">
+                                                                                        <i class="bi bi-plus-circle-fill" style="text-align:right;margin-right: 10px"></i>
+                                                                                        <form>
+                                                                                            <div class="d-flex align-items-center mb-2 col-12">
+                                                                                                <div class="form-group" style="margin-left: 4px">
+                                                                                                    <label for="milestone">Milestone</label><span style="color: red">*</span>
+                                                                                                    <!-- <input type="milestone" class="form-control" id="milestone" placeholder="Select Milestone" style="width:150px"> -->
+                                                                                                    <div class="state-dropdown">
+                                                                                                        <select [(ngModel)]="selectedState" required style="width: 400px;">
+                                                                                                                                                                 <option *ngFor="let state of states" [value]="state">    
+                                                                                                                                                                         {{ state.name }}
+                                                                                                          </option>
+                                                                                                        </select>
+
+
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div class="form-group" style="margin-left: 10px;">
+                                                                                                    <label for="percentage">Percentage</label><span style="color: red">*</span>
+                                                                                                    <input type="percentage" class="form-control" id="percentage" style="width:250px">
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="d-flex align-items-center mb-2 col-12">
+                                                                                                <div class="form-group" style="margin-left: 4px">
+                                                                                                    <label for="milestoneInstruction">Milestone Instruction</label><span style="color: red">*</span>
+                                                                                                    <input type="milestoneInstruction" class="form-control" id="milestoneInstruction" placeholder="Additional Instruction at Milestone level" style="width:340px">
+
+                                                                                                </div>
+
+                                                                                                <div class="form-group" style="margin-left: 10px;">
+                                                                                                    <label for="sectionInstruction">Section Instruction</label><span style="color: red">*</span>
+                                                                                                    <input type="sectionInstruction" class="form-control" id="sectionInstruction" style="width:340px" placeholder="Additional Instruction at Section level">
+
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="d-flex align-items-center mb-2 col-12">
+                                                                                                <div class="form-group" style="margin-left: 4px">
+                                                                                                    <label for="laonInstruction">Loan Type Instruction</label>
+                                                                                                    <input type="laonInstruction" class="form-control" id="laonInstruction" placeholder="Additional Instruction at loantype level" style="width:340px">
+
+                                                                                                </div>
+
+                                                                                                <div class="form-group" style="margin-left: 10px;">
+                                                                                                    <label for="stateInstruction">State level Instruction</label>
+                                                                                                    <input type="stateInstruction" class="form-control" id="stateInstruction" style="width:340px" placeholder="State level Instruction">
+
+                                                                                                </div>
+                                                                                            </div>
+
+                                                                                        </form>
+                                                                                    </div>
+                                                                                    <br> <button style="color: black; width: 80px;  padding: 5px; border-radius: 5px; margin-top:8px; margin-left:710px; text-align:center; border: 1px solid black;">
+                                                                                                        Save
+                                                                                                            </button>
+                                                                                    <br>
+
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
