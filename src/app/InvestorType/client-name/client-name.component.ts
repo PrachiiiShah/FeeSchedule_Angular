@@ -6,10 +6,10 @@ import{ClientSelectionService} from 'src/app/InvestorType/client-selection.servi
   styleUrls: ['./client-name.component.css']
 })
 export class ClientNameComponent {
-clients=[
- {name:'Bank of America'},{
-name:'Caliber'},{name:'Carrington'},{name:"Champion"},{name:"Chase"},{name:'Community Loan Servicing'},{name:'M&T Bank'},{name:'PennyMac'},{name:'US Bank'},{name:'RoundPoint'},{name:'Selene'}];
-
+// clients=[
+//  {name:'Bank of America'},{
+// name:'Caliber'},{name:'Carrington'},{name:"Champion"},{name:"Chase"},{name:'Community Loan Servicing'},{name:'M&T Bank'},{name:'PennyMac'},{name:'US Bank'},{name:'RoundPoint'},{name:'Selene'}];
+clients: any[] = [];
 constructor(private clientSelectionService: ClientSelectionService) { }
 
 selectClient(clientName: string) {
@@ -17,7 +17,17 @@ selectClient(clientName: string) {
 }
  
   ngOnInit(): void {
+    this.loadClients();
   }
- 
+  loadClients(): void {
+    this.clientSelectionService.getClientTypes().subscribe(
+      (data: any[]) => {
+        this.clients = data;
+      },
+      (error) => {
+        console.error('Error fetching client types:', error);
+      }
+    );
+  }
 
 }

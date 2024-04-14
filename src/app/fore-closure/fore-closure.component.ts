@@ -12,14 +12,14 @@ import { HttpClient } from '@angular/common/http';
 
 export class ForeClosureComponent {
   userArray: any[]=[];
-  states = [
-    { abbreviation: 'AK', name: 'Alaska' },
-    { abbreviation: 'AL', name: 'Alabama' },
-    { abbreviation: 'AR', name: 'Arkansas' },
-    { abbreviation: 'AZ', name: 'Arizona' },
-    { abbreviation: 'CA', name: 'California' }
-  ];
-
+  // states = [
+  //   { abbreviation: 'AK', name: 'Alaska' },
+  //   { abbreviation: 'AL', name: 'Alabama' },
+  //   { abbreviation: 'AR', name: 'Arkansas' },
+  //   { abbreviation: 'AZ', name: 'Arizona' },
+  //   { abbreviation: 'CA', name: 'California' }
+  // ];
+  states: any[] = [];
  
 
   // filteredStates: { abbreviation: string, name: string }[] = [];
@@ -33,6 +33,19 @@ export class ForeClosureComponent {
   }
   selectState(stateName: string) {
     this.StateService.setSelectedState(stateName);
+  }
+  ngOnInit(): void {
+    this.loadStates();
+  }
+  loadStates():void{
+    this.StateService.getStateTypes().subscribe(
+      (data:any[])=>{
+        this.states=data;
+      },
+      (error)=>{
+        console.error('Error fetching States:', error);
+      }
+    );
   }
   // getAllUser(){
   //   this.http.get('https://jsonplaceholder.typicode.com/users').subscribe((data)=>{

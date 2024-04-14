@@ -1,14 +1,14 @@
 <br>
 <div class="card-body">
     <div class="row">
-        <div class="col-3" *ngFor="let loan of loans" routerLinkActive="active" routerLink="/conventional" (click)="setSelectedLoan(loan.name)">
+        <div class="col-3" *ngFor="let loan of loans" routerLinkActive="active" routerLink="/conventional" (click)="selectLoan(loan.name)">
             <div class="fees">
                 <div class="fee">
                     <div class="icon-container">
 
                         <i class="bi bi-check-circle-fill" width="30" height="50"></i>
                     </div>
-                    <h5> {{ loan.name }}</h5>
+                    <h5> {{ loan.type }}</h5>
 
                 </div>
             </div>

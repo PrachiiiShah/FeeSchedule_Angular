@@ -4,7 +4,7 @@
 
     <div class="row">
 
-        <div class="col-3" *ngFor="let loan of loans" routerLinkActive="active" routerLink="/investor" (click)="selectLoan(loan.name)">
+        <div class="col-3" *ngFor="let loan of loans" routerLinkActive="active" routerLink="/investor" (click)="selectedLoan(loan.name)">
 
             <div class="milestone">
                 <div class="mile">
@@ -12,7 +12,7 @@
                         <i class="bi bi-check-circle-fill" width="30" height="50"></i>
                     </div>
 
-                    <h5> {{ loan.name }}</h5>
+                    <h5> {{ loan.type }}</h5>
 
                 </div>
             </div>

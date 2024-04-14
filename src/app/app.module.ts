@@ -43,6 +43,8 @@ import { RegComponent } from './Registration/reg/reg.component';
 import { LoginComponent } from './Login/login/login.component';
 import { HistoryComponent } from './User/history/history.component';
 import { ForeEditComponent } from './Edit/fore-edit/fore-edit.component';
+import { AddTokenService } from './Interceptor/add-token.service';
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +59,11 @@ import { ForeEditComponent } from './Edit/fore-edit/fore-edit.component';
     AppRoutingModule,
     FormsModule, ReactiveFormsModule,HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: AddTokenService,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

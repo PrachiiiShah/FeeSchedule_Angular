@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { LoanService } from 'src/app/DilComponent/loan.service';
+// import { LoanService } from 'src/app/DilComponent/loan.service';
+// import { LoanService } from '../../Services/loan.service';
+import { LoanService } from '../../Services/loan.service';
 import{ForeclosuretypeService} from '../../Services/foreclosuretype.service';
 @Component({
   selector: 'app-investor-type',
